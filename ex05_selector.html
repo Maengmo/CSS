@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+
+            6. 자식 선택자, Child Selector
+                - 선택자 > 선택자 {}
+                - 부모를조건으로 자식 선택
+                - 구체적
+                - 정밀도 높음 + 범위 좁음
+
+            7. 자손 선택자, Descendant Selector
+                - 선택자 선택자 {}
+                - 조상을 조건으로 자식 선택
+                - 정밀도 낮음 + 범위 넓음
+
+            1. 태그 선택자? > 탈락
+            2. ID 선택자? > 탈락
+            3. Class 선택자? > 햅격
+
+        */
+        /* 부모를 조건으로 자식을 선택*/
+        /* ol > li { color:orange;}
+        ul > li { color: blue;} */
+
+        ol span {color : red;}
+
+    </style>
+</head>
+<body>
+    
+    <h1>커리큘럼</h1>
+
+    <ol>
+        <li >Java <span>Programing</span></li>
+        <li>Oracle Database</li>
+        <li>JDBC <span>Programing</span></li>
+        <li>Client <span>Programing(<b>HTML</b>)</span></li>
+        <li>Client <span>Programing(<b>CSS</b>)</span></li>
+    </ol>
+
+    <h2>주의사항</h2>
+
+    <ul>
+        <li>구글 드라이브에 <span>백업본</span>을 다운로드 받으세요.</li>
+        <li>과제는 <span>금요일</span>까지 제출하세요.</li>
+        <li>VS Code 설치 바랍니다.</li>
+    </ul>
+</body>
+</html>
