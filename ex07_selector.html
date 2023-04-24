@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+
+            8. 인접 형제 선택자, Adjacent Sibling Selector
+                - 선택자 + 선택자
+                - 정밀도 높음 + 범위 좁음
+                - 자식 선택자 느낌
+
+            9. 형제 선택자, Sibling Selector
+                - 선택자 ~ 선택자
+                - 정밀도 낮음 + 범위 높음
+                - 자손 선택자 느낌
+
+        */
+        /* p + span {color : red;}
+        div + span { color : red;} */
+
+        div ~ span { color : red;}
+    </style>
+</head>
+<body>
+
+    <p>p태그</p>
+    <p>p태그</p>
+    <p>p태그</p>
+    <span>span 태그</span>
+
+    <div>div 태그</div>
+
+    <p>p태그</p>
+    <span>span 태그</span>
+    <p>p태그</p>
+
+    <div>div 태그</div>
+    <div>div 태그</div>
+    <span>span 태그</span>
+    
+</body>
+</html>
