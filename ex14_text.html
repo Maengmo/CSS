@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+        @font-face {
+    font-family: 'KCCMurukmuruk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCMurukmuruk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+        .txt {
+
+            /* 배경색 */
+
+            /* 텍스트 색상, 전경색(Fore Color)*/
+            color : #555;
+
+            /* 텍스트 정렬(수평 정렬) */
+            text-align: left;
+
+            /* 텍스트 크기 */
+            font-size : 2rem;
+
+            /*
+
+                폰트
+                - 그림X
+                - 벡터 > 공식(O)
+
+                HTML 수치 표현
+                1. 숫자 > px, 문자수, 셀병합크기
+                2. 숫자%
+
+                CSS 수치 표현
+                1. pt > 포인트(글꼴), 절대 값, 1/72인치
+                2. px > 픽셀(크기, 위치, 여백, 글꼴 등), 절대값
+                3. em > 기본 글꼴 크기를 기준으로 하는 상대 크기(%), 상대값, 알파벳 대문자 M의 높이를 100% 기준으로 하는 상대 크기. 상속을 받음
+                4. rem > em과 동일. 상속을 안받음
+                5. % > 백분율(크기, 여백, 위치, 정렬 등..) 상대값. 부모를 기준
+                -------------------------- 상위 5개는 자주 사용-------------------------------------------
+                6. ex > 알파벳 소문자 x의 높이를 100% 기준. 상대값 
+                7. mm > 밀리미터
+                8. cm > 센티미터
+                9. in > 인치
+                10. 기타 등등
+
+
+            */
+
+            /*
+
+                줄간격
+                - %, em(rem)
+                - 140% ~ 180%
+
+            */
+            line-height: 200%;
+
+            /* 스타일 */
+            font-style : italic;
+
+            /* 두께(normal, bold) */
+            font-weight: bold;
+
+            /* 단어 간격 */
+            word-spacing: 1em ;
+
+            /*  자간(문자 간격) */
+            letter-spacing: -1px;
+
+            /* 꾸밈 */
+            text-decoration:underline;
+            
+            /* 
+                글꼴(폰트) 
+                - 페이지의 폰트는 서버측 폰트를 사용하는것이 아니라, 브라우저 설치된 컴퓨터의 폰트를 사용한다.
+                - 비용 문제, 저작권 문제
+                - 서버 & 클라이언트 > 양쪽 모두에 설치된 폰트만 사용
+
+                폰트 예약어
+                - 폰트의 종류
+                1. serif: 획끝에 장식이 있는 폰트(궁서체, 바탕체)
+                2. sans-serif: 획끝에 장식이 없는 폰트(돋음체, 고딕체)
+                3. monospace: 문자폭이 균일(궁서, 궁서체)
+                4. cursive: 장식체
+                5. fantasy: 장식체
+
+                웹 폰트
+                - 폰트를 서버로부터 다운로드 받아서 사용하는 기술(스트리밍)
+                - 사용 기간은 일시적 > 현재 접속중에만 유효
+                - 제작(*.eof)
+                - 서비스
+            */
+            font-family: 'KCC무럭무럭체', 'Dongle', '궁서체', '바탕체', '맑은 고딕';
+
+
+            /*   */
+
+
+        }        
+
+    </style>
+</head>
+<body>
+    <h1>텍스트</h1>
+
+    <p>
+        온라인 동영상 서비스(OTT)와 방송사의 콘텐츠를 공짜로 ‘도둑 시청’할 수 있는 ‘누누티비’ 불법 접속 횟수가 최소 8300만건인 것으로 13일 나타났다. 전용 애플리케이션(앱) 같은 우회 통로를 고려하면 실제 접속 횟수는 1억 건이 훌쩍 넘을 것이라는 예상이 나온다. 불법 스트리밍으로 K콘텐츠의 근간이 흔들리면서 정부는 뒤늦게 ‘1일 1차단’에 나섰지만, 누누티비는 이를 비웃듯 새로운 접속 경로를 텔레그램 등을 통해 계속 배포하고 있다. 누누티비는 이날 돌연 “사이트 전방위 압박에 의거 심사숙고 끝에 서비스 종료 결정을 내리게 됐다”고 했다. 정부의 집중 타깃이 된 누누티비가 단속·수사를 피해가기 위해 우회로를 찾는 것이라는 얘기가 나왔다.
+        
+        과학기술정보방송통신위원회 소속 무소속 박완주 의원실이 방송통신심의위원회로부터 받은 자료에 따르면, 방심위는 2021년 10월부터 이번 달까지 누누티비와 그 대체 사이트 30곳에 대해 접속 차단 조치를 해왔다. 누누티비의 기본 접속 주소(URL)는 ‘noonoo.tv’인데 여기에 숫자를 더해 ‘noonoo10.tv’와 같은 대체 사이트를 만든다. 박완주 의원실이 차단된 주소들의 접속 건수를 계산한 결과 총 8349만회의 접속이 있었던 것으로 확인됐다. 중복 접속자를 감안하더라도 매우 높은 클릭 수와 이용률이다. 지난 2008년 개설된 국내 대형 커뮤니티 사이트인 ‘에펨코리아’의 총 접속 건수가 1억200만건으로 이와 비슷한 수준이라고 박 의원실은 밝혔다.
+        
+        누누티비에 사람들이 몰리는 건 구독료를 내야 접근 가능한 OTT의 최신 콘텐츠를 무료로, 실시간으로 볼 수 있어서다. 지난달 31일 넷플릭스에 공개된 오리지널 영화 ‘길복순’은 공개 다음 날 바로 누누티비에 풀렸다. 티빙의 자체 제작 콘텐츠인 ‘환승연애’도 누누티비의 인기 영상 중 하나였다. 누누티비 운영진은 이용자들의 수요에 맞춤형으로 응대하기도 한다. 사이트 내 댓글로 특정 작품을 요청하면 언제 업로드할 것인지 친절하게 답변을 다는 식이다. 한 OTT 업체 관계자는 “최근 누누티비가 불법 논란으로 유명해지면서 우리 쪽 월간활성이용자수(MAU)는 확연히 줄었다”며 “이용자가 빠져나간 것으로 추측된다”고 했다.</p>
+    <p class="txt">
+        온라인 동영상 서비스(OTT)와 방송사의 콘텐츠를 공짜로 ‘도둑 시청’할 수 있는 ‘누누티비’ 불법 접속 횟수가 최소 8300만건인 것으로 13일 나타났다. 전용 애플리케이션(앱) 같은 우회 통로를 고려하면 실제 접속 횟수는 1억 건이 훌쩍 넘을 것이라는 예상이 나온다. 불법 스트리밍으로 K콘텐츠의 근간이 흔들리면서 정부는 뒤늦게 ‘1일 1차단’에 나섰지만, 누누티비는 이를 비웃듯 새로운 접속 경로를 텔레그램 등을 통해 계속 배포하고 있다. 누누티비는 이날 돌연 “사이트 전방위 압박에 의거 심사숙고 끝에 서비스 종료 결정을 내리게 됐다”고 했다. 정부의 집중 타깃이 된 누누티비가 단속·수사를 피해가기 위해 우회로를 찾는 것이라는 얘기가 나왔다.
+        
+        과학기술정보방송통신위원회 소속 무소속 박완주 의원실이 방송통신심의위원회로부터 받은 자료에 따르면, 방심위는 2021년 10월부터 이번 달까지 누누티비와 그 대체 사이트 30곳에 대해 접속 차단 조치를 해왔다. 누누티비의 기본 접속 주소(URL)는 ‘noonoo.tv’인데 여기에 숫자를 더해 ‘noonoo10.tv’와 같은 대체 사이트를 만든다. 박완주 의원실이 차단된 주소들의 접속 건수를 계산한 결과 총 8349만회의 접속이 있었던 것으로 확인됐다. 중복 접속자를 감안하더라도 매우 높은 클릭 수와 이용률이다. 지난 2008년 개설된 국내 대형 커뮤니티 사이트인 ‘에펨코리아’의 총 접속 건수가 1억200만건으로 이와 비슷한 수준이라고 박 의원실은 밝혔다.
+        
+        누누티비에 사람들이 몰리는 건 구독료를 내야 접근 가능한 OTT의 최신 콘텐츠를 무료로, 실시간으로 볼 수 있어서다. 지난달 31일 넷플릭스에 공개된 오리지널 영화 ‘길복순’은 공개 다음 날 바로 누누티비에 풀렸다. 티빙의 자체 제작 콘텐츠인 ‘환승연애’도 누누티비의 인기 영상 중 하나였다. 누누티비 운영진은 이용자들의 수요에 맞춤형으로 응대하기도 한다. 사이트 내 댓글로 특정 작품을 요청하면 언제 업로드할 것인지 친절하게 답변을 다는 식이다. 한 OTT 업체 관계자는 “최근 누누티비가 불법 논란으로 유명해지면서 우리 쪽 월간활성이용자수(MAU)는 확연히 줄었다”며 “이용자가 빠져나간 것으로 추측된다”고 했다.</p>
+    
+    <p>
+        온라인 동영상 서비스(OTT)와 방송사의 콘텐츠를 공짜로 ‘도둑 시청’할 수 있는 ‘누누티비’ 불법 접속 횟수가 최소 8300만건인 것으로 13일 나타났다. 전용 애플리케이션(앱) 같은 우회 통로를 고려하면 실제 접속 횟수는 1억 건이 훌쩍 넘을 것이라는 예상이 나온다. 불법 스트리밍으로 K콘텐츠의 근간이 흔들리면서 정부는 뒤늦게 ‘1일 1차단’에 나섰지만, 누누티비는 이를 비웃듯 새로운 접속 경로를 텔레그램 등을 통해 계속 배포하고 있다. 누누티비는 이날 돌연 “사이트 전방위 압박에 의거 심사숙고 끝에 서비스 종료 결정을 내리게 됐다”고 했다. 정부의 집중 타깃이 된 누누티비가 단속·수사를 피해가기 위해 우회로를 찾는 것이라는 얘기가 나왔다.
+        
+        과학기술정보방송통신위원회 소속 무소속 박완주 의원실이 방송통신심의위원회로부터 받은 자료에 따르면, 방심위는 2021년 10월부터 이번 달까지 누누티비와 그 대체 사이트 30곳에 대해 접속 차단 조치를 해왔다. 누누티비의 기본 접속 주소(URL)는 ‘noonoo.tv’인데 여기에 숫자를 더해 ‘noonoo10.tv’와 같은 대체 사이트를 만든다. 박완주 의원실이 차단된 주소들의 접속 건수를 계산한 결과 총 8349만회의 접속이 있었던 것으로 확인됐다. 중복 접속자를 감안하더라도 매우 높은 클릭 수와 이용률이다. 지난 2008년 개설된 국내 대형 커뮤니티 사이트인 ‘에펨코리아’의 총 접속 건수가 1억200만건으로 이와 비슷한 수준이라고 박 의원실은 밝혔다.
+        
+        누누티비에 사람들이 몰리는 건 구독료를 내야 접근 가능한 OTT의 최신 콘텐츠를 무료로, 실시간으로 볼 수 있어서다. 지난달 31일 넷플릭스에 공개된 오리지널 영화 ‘길복순’은 공개 다음 날 바로 누누티비에 풀렸다. 티빙의 자체 제작 콘텐츠인 ‘환승연애’도 누누티비의 인기 영상 중 하나였다. 누누티비 운영진은 이용자들의 수요에 맞춤형으로 응대하기도 한다. 사이트 내 댓글로 특정 작품을 요청하면 언제 업로드할 것인지 친절하게 답변을 다는 식이다. 한 OTT 업체 관계자는 “최근 누누티비가 불법 논란으로 유명해지면서 우리 쪽 월간활성이용자수(MAU)는 확연히 줄었다”며 “이용자가 빠져나간 것으로 추측된다”고 했다.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, illum quae nam omnis ratione voluptates est voluptatibus! Non voluptates esse sunt aliquid sed perspiciatis, libero, doloribus, pariatur sequi placeat minima. Aliquam assumenda molestiae sunt, dignissimos repellat animi porro. Tempore, doloremque a ipsa atque, architecto minus similique quos labore officia numquam sequi ipsam modi, velit reprehenderit sit esse voluptates fugiat maxime saepe veritatis consectetur vero quo aut? Veniam recusandae voluptatem consequuntur omnis ipsam assumenda, iusto, ut modi minus voluptatibus ullam minima, debitis nesciunt quidem consectetur temporibus molestiae. Facere voluptas exercitationem provident suscipit repudiandae aspernatur cumque, consequatur sunt magnam soluta facilis animi?</p>
+    <p class="txt">Voluptatem ea architecto officiis culpa odio, quam enim facere neque sint cumque incidunt praesentium ducimus quidem minima ad alias magni provident recusandae accusamus earum nulla, asperiores repellendus odit? Nihil, temporibus! Veniam aspernatur vel nihil a praesentium eaque optio repudiandae eius voluptate ipsa deleniti cumque nisi minus accusamus voluptatum doloremque sed, libero amet, ratione quo sunt facilis vero reiciendis. Iusto non aut doloremque explicabo! Velit sapiente officia molestias vel itaque consectetur eius quidem atque blanditiis cum perferendis aspernatur deserunt id necessitatibus ducimus ipsa nostrum, hic voluptatem natus. Pariatur, non distinctio? Expedita reiciendis laudantium incidunt officia accusamus odio reprehenderit eos optio. Inventore.</p>
+    <p>Esse quidem optio inventore voluptate, voluptas earum, dolores modi laudantium id, voluptatem eum veniam assumenda deserunt quod. Reiciendis nostrum eligendi accusantium sit quod eaque. Itaque alias, ut, aperiam temporibus pariatur saepe aliquid error tempora illo ullam asperiores, assumenda necessitatibus? Nam a aliquid fugiat officia in nihil velit tenetur quasi temporibus eveniet praesentium, magni dolores cupiditate reprehenderit ab animi itaque atque rem est doloremque ea commodi, laudantium libero ullam. Corrupti officiis inventore quasi ducimus, sapiente rem consequuntur porro minus quis, aliquam beatae perferendis doloremque praesentium illo, iusto numquam amet. Quod, mollitia laudantium. Libero asperiores eum, sequi perspiciatis voluptate eos assumenda laborum.</p>
+
+    <hr>
+
+    <h2>CSS > C(Cascading)</h2>
+    <!-- 모든 속성이 상속되진 않는다. 일부 속성만 상속 된다. (Text 관련 만) -->
+    <div>
+        할아버지
+        <div style="font-size: 2em">
+            아버지
+            <div style="font-size: 2em">나</div>
+            아버지
+        </div>
+        할아버지
+    </div>
+</body>
+</html>
