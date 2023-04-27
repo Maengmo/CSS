@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*
+
+            박스 모델
+            1. border
+            2. width, height
+
+        */
+
+        .box {
+            border : 10px solid black;
+        }
+
+        #box2 {
+            border-color: blue;
+            /* width: 100%;
+            height: auto; */
+            width : 300px;
+            min-height: 200px;
+        }
+
+        /*
+
+            블럭태그
+            - 너비 : 100%
+            - 높이 : 내용물
+            - width/height 적용 가능
+
+            인라인태그
+            - 너비 : 내용물
+            - 높이 : 내용물
+            - width/height 적용 불가능
+        */
+        #div1 {
+            background-color: yellow;
+            width : 200px;
+            height: 200px;
+        }
+
+        #span1 {
+            background-color: yellow;
+            width : 200px;
+            height: 200px;
+        }
+
+        p > span {
+            background-color: yellow;
+            width : 200px;
+            height : 300px;
+            /* display : inline-block을 넣으면 width, heigh가 적용 되도록 함. */
+            /* display : inline-block; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>블럭태그</h1>
+    <div id="div1">블럭 태그</div>
+
+    <h1>인라인태그</h1>
+    <span id="span1">인라인 태그</span>
+
+    <h1>박스 모델</h1>
+
+    <!-- div#box$.box{상자$}*3 -->
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <hr>
+
+    <p>안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. <span>안녕하세요.</span> 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. 안녕하세요. 홍길동님. </p>
+    
+</body>
+</html>

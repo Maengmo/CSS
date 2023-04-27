@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*  
+
+            CSS 박스 모델, Box Model
+            - 모든 태그는 사각형으로 랜더링(출력) 된다.
+            - 태그가 화면에 출력 될 때 공통된 성질에 관련된 정책(모델)
+
+            1. border
+            2. width, height
+            3. padding
+            4. margin
+
+            1. 테두리, border
+                - 모든 태그는 자신의 영역을 가진다.
+                - 영역이 항상 사각형이다. -> 테두리
+                - 테두리 > 표현 O, 표현 X
+
+        
+        */
+        #box1 {
+            background-color: yellow;
+        }
+
+        #box2 {
+            border-color: black; /* 선의 색상 */
+            border-width: 5px; /* 선의 두께 */
+            border-style: dashed; /* 선의 종류  solid, dashed, dotted, bubble, inset ...*/
+        }
+
+        #box3 {
+            border : 1px solid blue;
+        }
+
+        #box4 {
+            border-top : 1px solid blue;
+            border-right : 5px solid red;
+            border-bottom : 10px solid yellow;
+            border-left : 20px solid green;
+        }
+
+        #box5 {
+            border-width : 10px;
+            border-style: solid;
+            border-color: red yellow blue orange;
+        }
+
+        .txt {
+            outline: none;
+            border: 5px solid gray;
+        }
+
+        .txt:focus {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>박스 모델</h1>
+
+    <!-- div#box$.box{상자$}*3 -->
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+    <hr>
+    <div id="box4" class="box">상자4</div>
+    <hr>
+    <div id="box5" class="box">상자5</div>
+    <hr>
+
+    <input type="text" class="txt">
+
+</body>
+</html>
