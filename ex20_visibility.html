@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+
+            Visibility, 가시성
+            요소를 화면에 보일지? 말지?
+        
+        */
+
+        #cat2 {
+            visibility:visible;
+            /* display :none; */
+        }
+
+        #box {
+            border : 10px solid black;
+            padding : 50px;
+            background-color: yellow;
+        }
+
+        /* #box:hover {
+            visibility: hidden;
+        } */
+
+        /* #cat1:hover + #cat2 {
+            visibility: hidden;
+        } */
+
+        #cat1:hover ~ img {
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="images/catty01.png" id="cat1">
+        <img src="images/catty02.png" id="cat2">
+        <img src="images/catty03.png" id="cat3">
+    </div>
+
+    
+</body>
+</html>
