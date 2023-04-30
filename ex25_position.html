@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            요소의 위치, Position
+            1. padding > 부모가 자식의 위치 지정
+            2. margin > 스스로 위치 지정
+            3. position > 정석(CSS1 ~ CSS3)
+            4. transfom > 정석(CSS3)        
+        
+            Position
+            - 좌표값 사용 > 위치 지정
+            - x(left), y(top)
+            - 좌표를 지정하는 방식이 여러개 제공
+
+            1. position : static;
+                - 기본값
+                - 정적 좌표
+                - 워드 프로세스 방식 > FlowLayout 방식
+                    - 코딩 순서대로 출력되는 방식
+                        - 먼저 코딩 > 위에 배치, 같은줄 : 왼쪽에 배치
+                        - 나중에 코딩 > 아래에 배치, 오른쪽에 배치
+            2. position : absolute;
+                - 절대 좌표
+                - left, top
+                - 문서의 좌측 상단을 기준으로 한다.(X)
+                - 자신의 직계 조상 중 가장 처음으로 만나는 태그 중 position이 static이 아닌 태그를 기준으로 한다.
+                - 원래 있던 공간이 사라진다.
+
+            3. position : relative;
+                - 상대 좌표
+                - left, top
+                - 자신의 위치를 기준으로 한다.
+                - 원래 있던 공간이 그대로 유지된다.
+
+            4. position : fixed;
+                - 고정 좌표
+                - left, top
+                - 브라우저 창(화면)의 좌측 상단을 기준으로 한다.
+                - 스크롤에 반응하지 않고 그대로 유지된다.
+                - 원래 있는 공간이 사라진다.
+
+            5. position : sticky;
+                 - 고정 좌표
+                - left, top
+                - 브라우저 창(화면)의 좌측 상단을 기준으로 한다.
+                - 화면에 보일때는 static처럼 동작, 사라질때는 fixed 처럼 동작
+                - 스크롤에 반응하지 않고 그대로 유지된다.
+                - 원래 있던 공간이 그대로 유지된다.
+    
+
+        */
+
+        .box {
+            border : 5px solid black;
+            width : 200px;
+            height: 200px;
+        }
+
+        #box1 { background-color: tomato;}
+        #box2 {background-color: gold;}
+        #box3 {background-color: cornflowerblue;}
+
+        #box2 {
+            /* position : absolute;
+            left : 0px;
+            top : 0px; */
+
+            /* position:relative;
+            left : 100px;
+            top : 0px; */
+            
+            /* position : fixed;
+            left : 0px;
+            top : 0px; */
+
+            /* position : sticky;
+            left : 0px;
+            top : 0px; */
+        }
+
+        #b1, #b2, #b3 {
+            border : 5px solid black;
+        }
+
+        #b1 {
+            width: 500px;
+            height : 400px;
+            background-color: tomato;
+            position : absolute;
+            left : 500px;
+            top : 200px;
+        }
+
+        #b2 {
+            width: 400px;
+            height : 300px;
+            background-color: gold;
+            /* position : absolute;
+            left : 300px;
+            top : 200px; */
+        }
+    
+        #b3 {
+            width: 300px;
+            height : 200px;
+            background-color: cornflowerblue;
+            position:absolute;
+            left : 0px;
+            top : 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>absolute</h1>
+
+    <div id="b1">
+        상자1
+        <div id="b2">
+            상자2
+            <div id="b3">
+                상자3
+            </div>
+        </div>
+    </div>
+
+    <h1>position</h1>
+
+    <!-- div#box$.box{상자$}*3 -->
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+
+    <!-- (p>lorem)*10 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque id delectus praesentium beatae quibusdam consequuntur, voluptatem aliquid veniam provident veritatis pariatur sequi deserunt impedit itaque accusantium nobis. Quas, iure.</p>
+    <p>Asperiores, iure sequi unde exercitationem placeat atque sapiente consequuntur, cum sit quidem, suscipit explicabo minima! Dolore unde quisquam tempora qui. Eos molestias obcaecati autem quod non et dolores modi ea?</p>
+    <p>Animi libero sit earum illum amet quasi nemo veritatis necessitatibus officiis placeat iste id deleniti culpa ea quibusdam officia aliquam, natus delectus ipsa consectetur! Quibusdam impedit quam numquam aut in!</p>
+    <p>Aliquid, necessitatibus. Corrupti, tempora. Dolore harum porro officia in! Necessitatibus odio veniam, amet corporis, modi beatae debitis maiores accusamus pariatur iusto ab fugit facere odit alias et repellendus! Exercitationem, animi!</p>
+    <p>Iste doloribus soluta inventore tempore sed, delectus, nam unde culpa dolores optio quos recusandae? Asperiores similique veniam porro mollitia incidunt earum praesentium unde consectetur quae dicta maxime, ipsam totam rem?</p>
+    <p>Assumenda quo explicabo eaque! Veritatis odit eius molestiae blanditiis alias. Quidem nemo incidunt harum iste, earum assumenda voluptates animi, ex debitis id accusamus excepturi pariatur similique dolore illo saepe unde!</p>
+    <p>Similique architecto eveniet corrupti iure quibusdam assumenda aspernatur optio! Sunt beatae fugit, voluptatum quae labore repellendus veritatis ducimus quam ipsum enim asperiores nam commodi. Aut culpa vel nihil eveniet deserunt?</p>
+    <p>Ab ullam obcaecati quia, ratione provident laboriosam repellendus velit. Praesentium, veniam quidem. Nulla dolores expedita quaerat sed non voluptatem. Odit voluptatum soluta aspernatur aut non ducimus, exercitationem quaerat porro eveniet.</p>
+    <p>Eius dolore ut accusantium quos aspernatur aperiam quisquam laudantium ab vel. Dicta voluptatum architecto totam nulla aperiam numquam assumenda voluptate in hic eaque doloribus obcaecati omnis, repellendus ea tempore ducimus.</p>
+    <p>Nulla vitae saepe unde tempora ad commodi quibusdam vel est dolorum sapiente, hic totam eum iste laboriosam doloremque dignissimos, voluptatem nobis. Molestias, quas quaerat temporibus ad delectus sit quo corporis.</p>
+    
+</body>
+</html>
