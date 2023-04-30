@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .news {
+            width: 390px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .title {
+            width: 270px;
+            margin-bottom: 5px;
+            
+        }
+        
+        .author {
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: #888;
+        }
+
+        .item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #CCC;
+        }
+
+        img {
+            float: right;
+            border: 1px solid #DDD;    
+            width: 100px;
+            margin-top: -8px;
+        }
+
+        .item:last-child{
+            border-bottom: 0px;
+        }
+
+        .item .author img {
+            width : 15px;
+            height: 15px;
+            float : left;
+            margin-top : 2px;
+            margin-right : 1.5px;
+        }
+
+        .news .top {
+            font-size: 18px;
+            margin-bottom : 5px;
+            font-weight: bolder;
+        }
+
+        .news .middle-top {
+            font-size: 14px;
+            margin-bottom : 5px;
+            color : #888;
+            margin-bottom : 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네이버 따라 만들기 -->
+
+    <!-- 네이버 뉴스 기사 -->
+
+    <!-- 
+        웹 이미지 포맷
+        1. gif
+            - 아이콘, 그래픽 등
+            - 최대 256색
+            - Animation GIF > 움짤
+
+        2. jpg(jpeg)
+            - 압축률 높음(손실)
+            - 사진 저장
+            - 16비트 색상수
+
+        3. png
+
+        다운로드.jfif
+     -->
+
+     <div class="news">
+        <div class="top">언론사별 가장 많이 본 뉴스</div>
+        <div class="middle-top">오후 3시~ 오후4시까지 집계한 결과입니다.</div>
+        <div class="item">
+            <img src="images/news_001.jpg">        
+            <div class="title">엄마 타있는데…추락 방충망, 칼처럼 벤츠에 꽂혔다 [포착]</div>
+            <div class="author"> <img src="images/국민일보.png">국민일보</div>
+            
+            
+        </div>
+        
+        <div class="item">
+            <img src="images/news_002.jpg">
+            <div class="title">[속보] 대통령실, 野 김태효 해임 요구에 “누구에게 도움 …</div>
+            <div class="author"><img src="images/SBS.jpg">SBS</div>            
+        </div>
+
+        <div class="item">
+            <img src="images/news_03.jpg">
+            <div class="title">얼빠진 제주공항...보안검색대 꺼진 줄도 모르고 33명 줄 …</div>
+            <div class="author"><img src="images/JTBC.png">JTBC</div>            
+            
+        </div>
+
+        <div class="item">
+            <img src="images/news_04.jpg">
+            <div class="title">천주교 사제들, 오늘도 ‘윤석열 퇴진’ 미사…“주인이 해결 …</div>
+            <div class="author"><img src="images/파이낸셜.png">파이낸셜</div>             
+        </div>
+
+        <div class="item">
+            <img src="images/news_05.jpg">      
+            <div class="title">리얼미터 "윤대통령 지지율 33.6%…5개월만에 최저치"</div>
+            <div class="author"><img src="images/조선비즈.png">조선비즈</div>         
+        </div>
+        
+     </div>
+</body>
+</html>
