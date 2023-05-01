@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            그림자, Shadow
+
+            1. text-shadow : x y blur color;
+            2. box-shadow : x y blur color;
+        
+        */
+
+        div:nth-child(1) {
+            text-shadow: 2px 2px 5px #999;
+        }
+        div:nth-child(2) {
+            border : 1px solid black;
+            width : 100px;
+            height: 100px;
+            margin: 20px;
+            box-shadow: 5px 5px 2px gray;
+        }
+
+        div:nth-child(2):hover {
+            box-shadow : 5px 5px 2px black;
+        }
+
+    </style>
+</head>
+<body>
+
+        <div class="item">빨강</div>
+        <div class="item">노랑</div>
+        <div class="item">파랑</div>
+  
+</body>
+</html>

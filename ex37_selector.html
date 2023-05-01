@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+
+            CSS 선택자(가상 클래스)
+            1. :first-child
+                - 가상 클래스
+                - 검색된 태그 자체를 조작
+            2. ::before
+                - 가상 요소(Element)
+                - 검색된 태그 주변을 조작
+        
+            전후 선택자
+            1. ::before = :before
+            2. ::after = :after
+
+        */
+
+        span {
+            color : blue;
+        }
+
+        /* sapn:before {
+            content : '[';
+        }
+
+        sapn::after {
+            content : ']';
+        } */
+
+        /* span::before {
+            content: '홍길동';
+            color : orange;
+            font-weight: bold;
+            font-size : 1.5rem;
+        } */
+
+        /* span::after {
+            content : '아무개';
+            color : pink;
+        } */
+
+        #list {
+            font-size : 0;
+        }
+
+        #list div {
+            width : 100px;
+            height: 100px;
+            display : inline-block;
+            font-size : 1rem;
+            text-align: center;
+        }
+
+        #list .item {
+            width : 100px;
+            height: 100px;
+            float : left;
+        }
+
+        #list::after {
+            content: '';
+            display: block;
+            clear : left;
+        }
+
+        #list div:nth-child(1) {background-color: tomato;}
+        #list div:nth-child(2) {background-color: yellow;}
+        #list div:nth-child(3) {background-color: cornflowerblue;}
+        #list div:nth-child(4) {background-color: greenyellow;}
+        #list div:nth-child(5) {background-color: plum;}
+    </style>
+</head>
+<body>
+
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Suscipit</span> libero laudantium cum deleniti nostrum similique inventore, quam placeat cupiditate <span>porro</span> aliquid ipsam hic molestiae incidunt voluptate laboriosam <span>accusamus!</span> Ad, atque.</p>
+
+    <hr>
+
+    <div id="list">
+        <div>빨강</div>
+        <div>노랑</div>
+        <div>파랑</div>
+        <div>초록</div>
+        <div>보라</div>
+    </div>
+
+    <div>다른 내용들..</div>
+    
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .list input[type=text] {
+            display: block;
+            border : 1px solid #555;
+            padding : 3px;
+            margin-bottom : 3px;
+            background-color: white;
+            color :#444;
+            outline: none;
+        }
+
+        /* .list input[type=text]:required {
+            background-color: gold;
+            border-color : red;
+        } */
+        /* .list input[type=text]:optional {
+            background-color: gray;
+            border-color : red;
+        } */
+
+        /* .list input[type=text]:disabled {
+            background-color: #999;
+        }
+
+        .list input[type=text]:enabled {
+            background-color: gold;
+        } */
+
+        /* .list input[type=text]:read-only {cursor : not-allowed;}
+        .list input[type=text]:read-write {background-color: gold;} */
+
+        input[type=checkbox] {
+            /* border : 1px solid black; */ /*불가능*/
+            /* background-color: gold; */ /*불가능*/
+            /* width : 200px; */
+
+            /* 불투명도(0~1) */
+            /* opacity: 0.2; */
+        }
+
+        input[type=checkbox]:checked {
+            opacity : 1;
+        }
+
+        .cb-cat + .cat {
+            visibility: hidden;
+        }
+
+        .cb-cat:checked + .cat {
+            visibility: visible;
+        }
+
+        .cb1 + div {
+            display : none;
+        }
+
+        .cb1:checked + div {
+            display: block;
+        }
+
+        /*  */
+
+        .item {
+            border : 1px solid #555;
+            width : 200px;
+        }
+        
+        .item #cb2 {
+            display: none;
+        }
+
+        .item label {
+            font-size : 1.5rem;
+            font-family : Arial;
+            font-variant : small-caps;
+            display : block;
+            padding : 10px;
+            background-color : greenyellow;
+            cursor : pointer;
+        }
+
+        .item div {
+            padding : 12px;
+            border-top : 1px solid #555;
+            display : none;
+        }
+        .item #cb2:checked + label {
+            background-color: gold;
+        }
+
+        .item #cb2:checked + label + div {
+            display : block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="item">
+        <input type="checkbox" class="cb2" id="cb2">
+        <label for="cb2">Html</label>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quos mollitia provident quae nihil quam ex, consequatur voluptas molestiae vero illum? Nulla ratione, nam sequi voluptates praesentium consectetur possimus rerum.</div>
+    </div>
+
+    <hr>
+    
+    제목 <input type="checkbox" class="cb1">
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id laudantium, quo vero praesentium reiciendis! Dolore, praesentium quisquam, id fugit architecto reiciendis quidem laborum tempore ipsam nulla, voluptate illum tenetur.</div>
+
+    <details>
+        <summary>제목</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti molestias harum iure doloribus provident, ipsa numquam vitae esse rerum debitis? Placeat fugit blanditiis incidunt quas quidem hic eligendi et.</p>
+    </details>
+
+    <div>
+        <input type="checkbox" class="cb-cat">
+        <img src="images/catty01.png" class="cat">
+    </div>
+
+    <div>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+
+    <div class="list">
+        <input type="text" value="1" required>
+        <input type="text" value="2" readonly>
+        <input type="text" value="3" readonly>
+        <input type="text" value="4">
+        <input type="text" value="5" required>
+        <input type="text" value="6" disabled>
+        <input type="text" value="7" disabled>
+        <input type="text" value="8">
+        <input type="text" value="9">
+        <input type="text" value="10" required>
+    </div>
+    
+</body>
+</html>

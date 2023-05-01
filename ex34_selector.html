@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            가상 클래스
+
+            1. :first-child : 자신이 자신의 그룹에서 첫번째 자식인지?
+            2. :last-child
+            3. :nth-child
+            4. :nth-last-child(n)
+
+             n 
+            1. 숫자 : index(위치) > 1부터 시작
+            2. 수열 :2n, 2n+1, 5n+2 etc..
+            3. 수열 : even(짝수), odd(홀수)
+  
+        */
+
+        li:nth-child(2n) {
+            color : orange;
+        }
+
+        /* li:first-child {
+            color : orange;
+        }
+
+        li:last-child {
+            color : red;
+        }
+
+        li:nth-child(2) {
+            color : blue;
+        }
+
+        li:nth-last-child(3) {
+            color:blueviolet
+        } */
+
+        .tbl {
+            border : 1px solid black;
+            border-collapse : collapse;
+        }
+
+        .tbl td {
+            border : 1px solid black;
+            padding : 5px;
+        }
+
+        /* .tbl tr:first-child {
+            background-color: gold;
+        } */
+
+        /* .tbl td:first-child {
+            background-color: red;
+        } */
+
+        /* .tbl td:nth-child(5) {
+            background-color: tomato;
+        } */
+
+        /* .tbl tr:nth-child(even) {
+            background-color: #DDD;
+        } */
+
+        /* .tbl tr:nth-child(even) td:nth-child(odd) {
+            background-color: gold;
+        } */
+
+        .tbl tr:nth-child(even) td:nth-child(odd) {
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>목록</h1>
+
+    <ul class="list1">
+        <li>강아지</li>
+        <li>고양이</li>
+        <li>다람쥐</li>
+        <li>소</li>
+        <li>돼지</li>
+        <li>말</li>
+        <li>코끼리</li>
+        <li>사자</li>
+        <li>호랑이</li>
+        <li>늑대</li>
+    </ul>
+
+    <h1>테이블</h1>
+
+    <!-- table.tbl>tr*20>td{item}*10 -->
+    <table class="tbl">
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+        <tr>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+            <td>item</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
