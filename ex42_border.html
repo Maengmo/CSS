@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        #box {
+            border : 1px solid black;
+            width : 300px;
+            height: 200px;
+            /* box-sizing : border-box; */
+            /* border-radius : 10px; */
+            /* padding : 20px; */
+            /* border-radius: 10%; */
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+        /* 
+        
+            모서리 둥글기
+            - border-radius : px, %
+        
+        */
+        /* #btn-search span {
+            font-size : 2rem;
+            color : gold;
+        } */
+        
+        #bar-search::after {
+            content : '';
+            display: block;
+            clear : left;
+        }
+        #txt-search, #btn-search {
+            float: left;
+            margin : 0;
+            padding : 0;
+            border : 0;
+            background-color: white;
+            outline: none;
+        }
+        
+        #txt-search {
+            border : 5px solid #19CE60;
+            font-size : 1.5rem;
+            padding : 5px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-right : 0;
+        }
+
+        #btn-search {
+            background-color: #19CE60;
+            width : 50px;
+            height : 48px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #btn-search span {
+            color : white;
+            font-size : 30px;
+            text-shadow: 2px 2px 2px gray;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="images/dog01.jpg" style="border-radius: 50%";>
+    <h1>검색</h1>
+
+    <div id="bar-search">
+        <input type="text" id="txt-search">
+        <button id="btn-search">
+            <span class="material-symbols-outlined">search</span>
+            <!-- 이미지 window+. -->
+        </button>
+    </div>
+    <hr>
+    <br><br><br><br><br><br><br>
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam non deserunt culpa iure omnis, ratione voluptatem veritatis doloribus perferendis blanditiis itaque repudiandae! Necessitatibus voluptatem odit at quis asperiores ipsum!</div>
+    
+</body>
+</html>

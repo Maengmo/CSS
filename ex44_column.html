@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #list {
+            /* border : 1px solid black; */
+            width : 800px;
+            column-count : 5;
+        }
+
+        #list .item {
+            border : 1px solid black;
+            width : 150px;
+            margin : 0px auto 15px auto;
+            font-size : 14px;
+            color : #444;
+            /* text-align : center; */
+            border-radius: 3px;
+            box-shadow: 3px 3px 2px #999;
+            page-break-inside: avoid;/*페이지에 의해서 짤리는것을 막는 것 */
+        }
+
+        #list .item img {
+            display: block;
+            margin : 20px auto;
+            box-shadow : -1px -1px 1px #555;
+        }
+
+        #list .item .txt {
+            margin : 0px 12px 20px 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Card Layout</h1>
+
+    <div id="list">
+
+        <!-- <div class="item">
+            <img src="images/rect_icon01.png">
+            <div class="txt">
+                Lorem ipsum dolor sit amet.
+            </div>
+        </div> -->
+
+        <!-- (div.item>((img[src=images/rect_icon$$.png])+(div.txt>lorem5)))*18 -->
+        <div class="item">
+            <img src="images/rect_icon01.png" alt="">
+            <div class="txt">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon02.png" alt="">
+            <div class="txt">Nam in atque praesentium tempore?</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon03.png" alt="">
+            <div class="txt">Asperiores perferendis voluptates nostrum impedit!</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon04.png" alt="">
+            <div class="txt">Est tempore quaerat id adipisci.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon05.png" alt="">
+            <div class="txt">Obcaecati corrupti earum ad vitae?</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon06.png" alt="">
+            <div class="txt">Eaque eum fugiat dignissimos labore.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon07.png" alt="">
+            <div class="txt">Consequuntur dicta nulla unde temporibus.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon08.png" alt="">
+            <div class="txt">Reiciendis aspernatur sapiente modi optio.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon09.png" alt="">
+            <div class="txt">Placeat nostrum reprehenderit est veniam.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon10.png" alt="">
+            <div class="txt">Dolorem at alias tempora quasi!</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon11.png" alt="">
+            <div class="txt">Possimus cumque deserunt modi ex.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon12.png" alt="">
+            <div class="txt">Recusandae ducimus facilis aut voluptas.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon13.png" alt="">
+            <div class="txt">Nemo tempora dolores esse quasi!</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon14.png" alt="">
+            <div class="txt">Sunt numquam labore ratione iure?</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon15.png" alt="">
+            <div class="txt">Explicabo nemo dolor dolorum expedita!</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon16.png" alt="">
+            <div class="txt">Quaerat nisi soluta a voluptas?</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon17.png" alt="">
+            <div class="txt">Maxime vero culpa assumenda beatae.</div>
+        </div>
+        <div class="item">
+            <img src="images/rect_icon18.png" alt="">
+            <div class="txt">Nisi quibusdam consequatur quam at.</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
