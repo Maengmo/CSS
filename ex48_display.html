@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            border : 10px solid #000;
+        }
+
+        #box .item {
+            font-size : 2rem;
+        }
+
+        #box .item:nth-child(5n+1) {background-color: tomato;}
+        #box .item:nth-child(5n+2) {background-color: gold;}
+        #box .item:nth-child(5n+3) {background-color: cornflowerblue;}
+        #box .item:nth-child(5n+4) {background-color: orange;}
+        #box .item:nth-child(5n+5) {background-color: greenyellow;}
+
+        #box {
+            /*
+
+                display : flex;
+                - flex box, flexialbe box
+                - 레이아웃 구성 > 내부 요소의 배치
+                - float / position / margin
+
+            */
+            width : 600px;
+            height: 600px;
+            display: flex;
+
+            /* 
+            
+                기본 상태(display : flex)
+                - 메인축 방향 : 가로(아이템이 나열되는 방향)
+                - 수직축 방향 : 세로
+                - 아이템 크기 : 너비(요소 크기만큼)
+                - 아이템 크기 : 높이(부모 크기만큼)
+                - 아이템 크기 : 메인축(요소 크기만큼)
+                - 아이템 크기 : 수직축(부모 크기만큼)
+            
+            */
+
+            /* 
+            
+                flex-direction
+                - 메인축 방향을 지정하는 속성
+            
+            */
+
+            flex-direction : row;
+            /* flex-direction : column-reverse; */
+
+            /* 
+            
+                flex-wrap
+                - 자동 줄바꿈
+            
+            */
+            /* flex-wrap : wrap; */
+
+            /* 
+            
+                flex 속성명
+                1. justify-XXX
+                - 메인축 방향 관련된 속성
+                2. align-XXX
+                - 수직축 방향 관련된 속성
+
+                justify-content
+                - 메인축 방향 > 아이템 정렬
+            
+            */
+            /* justify-content : flex-start; */
+            /* justify-content : center; */
+
+            /* 균등 배치 */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* 
+            
+                align-items
+                - 수직축 방향 > 아이템 정렬
+                - justify-content와 동일하지만, 방향이 다름.
+            
+            */
+
+            align-items : stretch; /* 기본 값 */
+            align-items : flex-start; /*위로 정렬*/
+            align-items : flex-end; /*아래로 정렬*/
+            align-items : center;	/*가운데 정렬 */
+
+
+        }
+
+        /* #box::after {
+            content:'';
+            display : block;
+            clear:left;
+        }
+
+        #box .item {
+            float : left;
+            width:100px;
+            height: 100px;
+        } */
+        /* #box {
+            font-size : 0px;
+        }
+
+        #box .item {
+            display: inline;
+        } */
+
+        body {
+            margin-bottom: 500px;
+        }
+
+        h1 {
+            font-variant: small-caps;
+            width : 600px;
+            border-bottom: 1px dashed gray;
+        }
+
+        h1 > small {
+            font-size : 18px;
+        }
+
+        #title1 small {
+            float : right;
+            margin-top : 18px;
+        }
+
+        #title2 small {
+            position : relative;
+            left : 375px;
+        }
+
+        #title3 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        #title3 small {
+            margin-bottom : 5px;
+        }
+
+        #parent {
+            width: 400px;
+            height: 400px;
+            background-color: gold;
+            /* box-sizing : border-box;
+            padding-top : 150px; */
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #child {
+            width : 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            /* margin : 0 auto; */
+            /* margin-top : 200px; */
+            /* position : relative;
+            left : 150px;
+            top : 150px; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div class="item">딸기</div>
+        <div class="item">바나나</div>
+        <div class="item">포도</div>
+        <div class="item">파인애플</div>
+        <div class="item">귤</div>
+    </div>
+    
+    <hr>
+
+    <h1 id="title1">Main Title <small>Sub Title</small></h1>
+    <h1 id="title2">Main Title <small>Sub Title</small></h1>
+    <h1 id="title3">Main Title <small>Sub Title</small></h1>
+
+    <hr>
+
+    <div id="parent">
+            <div id="child"></div>
+    </div>
+
+</body>
+</html>

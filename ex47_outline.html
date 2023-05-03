@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+
+            OutLine
+            테두리 : border 사용
+            테두리 표현 O, 주변에 영역 침범 X : Outline 사용
+        
+        */
+        .box {
+            width : 200px;
+            height: 150px;
+        }
+        #box1 {
+            /* border : 10px solid tomato; */
+            background-color: tomato;
+        }
+        #box2 {
+            /* border : 10px solid black; */
+            /* outline : 10px solid cornflowerblue; */
+            background-color: cornflowerblue;
+        }
+        #box3 {
+            /* border : 10px solid gold; */
+            background-color: gold;
+        }
+        #box2:hover {
+            /* border : 10px solid black; */
+            outline:10px solid black;
+        }
+
+        input[type=text] {
+            display: block; /* 한줄 배치 */
+            margin-bottom: 5px;
+            outline : none;
+            /* border-width : 5px; */
+            border : 1px solid gray;
+            padding : 5px;
+            border-radius : 3px;
+        }
+
+        input[type=text]:focus {
+            /* border : 5px solid red; */
+            /* outline : 5px solid red; */
+            border-color : red;
+            background-color: rgba(255, 0, 0, .2);
+        }
+
+        #box4 {
+            background-color: orange;
+            position:absolute;
+            left: 20px;
+            top : 950px;
+            z-index : 1;
+        }
+
+        #box5 {
+            background-color: olivedrab;
+            position : absolute;
+            left : 100px;
+            top : 1000px;
+            z-index : 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- div#box$.box{상자$}*3 -->
+    <div id="box1" class="box">상자1</div>
+    <div id="box2" class="box">상자2</div>
+    <div id="box3" class="box">상자3</div>
+    
+    <hr>
+
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+    <hr>
+    <div id="box4" class="box">상자4</div>
+    <div id="box5" class="box">상자5</div>
+
+</body>
+</html>
