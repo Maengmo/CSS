@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #main-menu {
+            /* border : 1px solid black; */
+            font-size : 0px; /* Decender 공백 제거 */
+            width : 630px; /* 5개의 크기만금 공백 제거 */
+            margin : 0 auto; /* 블럭 태그의 가운데 정렬 마진을 좌우로 auto*/
+            transform : translate(0px, -100px)
+        }
+
+        #foot-menu {
+            /* border : 1px solid black; */
+            font-size : 0px; /* Decender 공백 제거 */
+            width : 630px; /* 5개의 크기만금 공백 제거 */
+            position : fixed;
+            bottom : 0;
+            left : calc(50% - 315px);
+            transform : translate(0px, 90px);
+
+        }
+
+        #main-menu > img, #foot-menu > img {
+            transition : all .7s;
+        }
+
+        #main-menu > img:hover {
+            transform: translate(0px, 90px);
+        }
+
+        #foot-menu > img:hover {
+            transform: translate(0px, -90px);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav id="main-menu">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+    </nav>
+
+    <nav id="foot-menu">
+        <img src="images/rect_icon01.png">
+        <img src="images/rect_icon02.png">
+        <img src="images/rect_icon03.png">
+        <img src="images/rect_icon04.png">
+        <img src="images/rect_icon05.png">
+    </nav>
+    
+</body>
+</html>
