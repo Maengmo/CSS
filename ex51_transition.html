@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            border : 10px solid orange;
+            width : 250px;
+            height: 188px;
+            overflow : hidden;
+        }
+
+        #box:hover > div {
+            transform: translate(-750px, 0px);
+        }
+
+        #box > div {
+            /* outline: 5px solid blue; */
+            width : 1250px;
+            display: flex;
+            display : flex;
+            transition : all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>
+            <img src="images/cat01.jpg">
+            <img src="images/cat02.jpg">
+            <img src="images/cat03.jpg">
+            <img src="images/cat04.jpg">
+            <img src="images/cat05.jpg">
+        </div>
+    </div>
+    
+</body>
+</html>
