@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+
+        
+        html {
+            /* border : 10px solid dodgerblue; */
+            /* height: 100%; 콘텐츠를 중앙에 위치하기 위해서 */
+        }
+
+        body {
+            /* height: 100%; */
+            /* border : 10px solid black; */
+
+            height: 100vh; /*눈에 보이는 영역 크기만큼 꽉채워라 */
+            margin : 0;
+
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        
+        /* 스크롤바를 제거 */
+        body::-webkit-scrollbar {
+            display : none;
+        }
+
+        .material-symbols-outlined {
+            font-size : 3rem;
+            font-weight: bold;
+
+            transform: scale(150, 150);
+            opacity: 0;
+
+            animation-name : key-logo;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease;
+        }
+
+        @keyframes key-logo {
+            from { transform: scale(150, 150); opacity: 0;}
+            to {transform: scale(1,1); opacity: 1;}
+        }
+
+        .material-symbols-outlined:nth-child(1){
+            color :tomato; 
+            animation-delay : 0s;
+        }
+        .material-symbols-outlined:nth-child(2){
+            color :gold; 
+            animation-delay : 0.6s;
+        }
+        .material-symbols-outlined:nth-child(3){
+            color :dodgerblue;
+            animation-delay : 1.2s; 
+        }
+
+    </style>
+</head>
+<body>
+    <span class="material-symbols-outlined">rocket_launch</span>
+
+    <span class="material-symbols-outlined">pets</span>
+
+    <span class="material-symbols-outlined">sentiment_dissatisfied</span>
+
+</body>
+</html>
