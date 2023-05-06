@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            CSS 변수
+            
+            변수 선언
+            - --변수명 : 값;
+
+            변수값
+            1. 열거형(색상)
+            2. 열거형(그외, left, center, solid, dashed..)
+            3. 수치(10px)
+
+            변수 사용(호출)
+            - var(--변수명)
+        
+        */
+
+        /* 문서 전역 변수 */
+        :root {
+            /* --background-color : skyblue; */
+            --main-background-color : #dad7cd;
+            --main-text-color : #344e41;
+            --main-title-color : #588157;
+
+            --main-title-size : 20px;
+            --main-text-size : 14px;
+
+            --logo: url(images/catty01.png);
+            --link : url(https://naver.com);
+        }
+
+        #list {
+            --main-color : gold;
+        }
+
+        #box1 {
+            --fore-color : blue;
+            color : var(--main-color);
+        }
+
+        #box2 {
+            /* 선언되지 않은 변수 > 초기값(기본값) 적용됨 */
+            color : var(--main-color);
+        }
+
+        #box3 {
+            color : var(--main-color);
+        }
+
+        body {
+            background-color: var(--main-background-color);
+            background-image: var(--logo);
+        }
+
+        h1.title {
+            color:var(--main-title-color);
+            font-size : var(--main-text-size);
+        }
+
+        p.content {
+            color : var(--main-text-color);
+            font-size : var(--main-text-size);
+        }
+    </style>
+</head>
+<body>
+    <!-- div#box$.box{상자$}*3 -->
+    <div id="list">
+        <div id="box1" class="box">상자1</div>
+        <div id="box2" class="box">상자2</div>
+        <div id="box3" class="box">상자3</div>
+    </div>
+
+    <!-- ((h1.title>lorem10)+(p.content>lorem)*5)*3 -->
+    <h1 class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, praesentium?</h1>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates non praesentium recusandae, officia atque modi error doloremque harum, adipisci laborum asperiores ipsum tempora nulla odio nostrum culpa temporibus obcaecati? Molestias.</p>
+    <p class="content">Deleniti officia vel laboriosam. Cum nostrum repellat nisi quae hic minus! Dolorem deserunt laudantium reiciendis voluptatem enim facere incidunt ut voluptates sequi aliquam tenetur eos, rerum non, repellendus, error eaque.</p>
+    <p class="content">Placeat, ex neque. Aliquid possimus accusantium, sapiente consequatur debitis asperiores facilis architecto. Fuga, cumque. Eius architecto mollitia ipsum sunt. Cum repellendus nisi molestias quae laudantium quam, sit sunt facilis omnis!</p>
+    <p class="content">Voluptas fuga reiciendis ut nostrum quaerat, consectetur atque vero, molestiae mollitia quam ab sint tempora accusantium quis necessitatibus culpa! Sint natus provident ipsam, recusandae non debitis corporis esse distinctio voluptatibus.</p>
+    <p class="content">Libero ad nobis accusamus reiciendis officia, quis ea hic vero rerum excepturi nostrum asperiores iusto quae tempora in? Repudiandae fuga quo, saepe corrupti similique ut! Assumenda eos id illo placeat.</p>
+    <h1 class="title">Pariatur officiis quidem corrupti ipsum et expedita impedit illo mollitia!</h1>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sint amet provident hic magni nobis ducimus recusandae nostrum natus. Debitis neque deleniti voluptate quisquam? Reiciendis eum ducimus veritatis nesciunt vel.</p>
+    <p class="content">Accusantium molestiae animi dolore recusandae minima ullam eveniet officiis quo aperiam deleniti atque quas cumque, quia maiores architecto blanditiis, libero saepe, deserunt beatae eius veniam. Beatae blanditiis itaque dignissimos nesciunt?</p>
+    <p class="content">Sint, ipsum iure velit architecto nihil dolorem, dolores, odit nulla minus magni molestiae autem incidunt cum pariatur voluptatem deleniti repudiandae blanditiis id beatae est error doloremque amet. Sed, commodi illo.</p>
+    <p class="content">Exercitationem dolore minima nulla culpa praesentium soluta amet, eos dignissimos illo blanditiis ipsa delectus nihil, molestias voluptates, at neque! Deleniti mollitia a recusandae rerum voluptate quae veritatis non libero optio.</p>
+    <p class="content">Ipsum quis quisquam pariatur ut eveniet at aspernatur praesentium, laboriosam nulla repudiandae aliquam rem sapiente dolor commodi fugiat aut fuga perferendis, nesciunt cum a laudantium. Doloremque quaerat et quo provident.</p>
+    <h1 class="title">Omnis, quisquam? Aliquid, perspiciatis nostrum. Deleniti dolore possimus porro esse?</h1>
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam ad illo rem maiores dolore saepe, non magnam esse quae perferendis, cum eos quisquam blanditiis voluptates accusantium maxime. Cum, culpa.</p>
+    <p class="content">Dolores quidem et excepturi quam sequi. Exercitationem, voluptas hic! Cupiditate commodi architecto voluptates veritatis eaque. Sapiente labore animi qui voluptatibus maxime voluptates similique tempore optio commodi? Laudantium accusamus placeat deserunt.</p>
+    <p class="content">Error cumque illum suscipit consequatur eum. Illo, mollitia cupiditate numquam fugiat laudantium magni tenetur placeat natus voluptatum quisquam recusandae iusto labore. Quaerat, non? Doloremque nostrum earum adipisci, esse amet minima?</p>
+    <p class="content">Eius debitis, non consequatur, dolore libero fugit cupiditate possimus iure, ipsum doloremque aut vero nobis. Optio nihil aliquid sed iusto magni molestias magnam voluptate excepturi, quaerat exercitationem cupiditate? Itaque, dolorum!</p>
+    <p class="content">Vel dolorem pariatur, consequuntur voluptatum hic soluta blanditiis commodi, atque labore beatae est illo velit libero ducimus rerum officia, quia esse nulla voluptas et! Amet totam labore molestiae ut commodi!</p>
+</body>
+</html>

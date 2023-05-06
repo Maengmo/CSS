@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            반응형 웹
+            - 반응형 레이아웃
+            - 웹 소비 장치 > 다양화
+            - 이전 : PC(다양한 해상도)
+            - 이후 : PC, 태블릿, 스마트폰 등.. (훨씬 다양한 해상도)
+            - 웹 페이지의 크기??
+
+            1. 페이지 각각 생성
+                - PC > PC 해상도에 맞는 페이지 제작
+                - MObile > Mobile 해상도에 맞는 페이지 제작
+            
+            2. 페이지 1회 생성 > 반응형 레이아웃 > CSS 미디어 쿼리
+                - PC > PC 해상도에 맞게 출력
+                - Mobile > Mobile 해상도에 맞게 출력
+
+            CSS 미디어 쿼리(Media Query)
+
+            @media (조건) {
+                CSS 영역
+            }
+
+            @media screen and (조건) {
+                해상도 조건에 맞는 기기를 위한 CSS 정의
+            }
+
+           
+        */
+
+        /* 모든 해상도에 적용해라!! */
+
+        /* 화면 크기가 최대 767px이하일 때 적용 */
+        /* @media (max-width : 767px) { */
+            #box {
+                border : 1px solid black;
+                width : 200px;
+                height : 300px;
+                background-color : gold;
+            }
+        /* } */
+        
+
+        @media (min-width : 768px) {
+
+            #box {
+                background-color: tomato;
+            }
+        }
+
+        /* 
+            
+            - 세로모드 스마트폰 너비
+            color : red;
+
+            - 가로모드 스마트폰 너비(567px ~ 767px)
+            @media (min-width : 576px) {
+                color : blue;
+            }
+
+            - 태블릿 너비(768px ~ 991px)
+            @media (min-width : 768px) {
+                color : orange;
+            }
+
+            - 데스크톱(랩탑)(992px~1199px)
+            @media (min-width : 992px) {
+                color : red;
+            }
+
+            - 큰화면 데스크톱(1200px ~ )
+            @media (min-width : 1200px) {
+                color : red;
+            }
+        
+        */
+    </style>
+</head>
+<body>
+    <div id="box">
+        상자
+    </div>
+    
+</body>
+</html>

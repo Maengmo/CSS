@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            프로젝트 > 반응형 레이아웃 결정!!
+
+            1. 데스크톱 우선 vs 모바일 우선
+                a. 데스크톱 우선
+                    - 큰 가로폭부터 > 작은 가로폭순으로 제작하는 방법
+                b. 모바일 우선
+                    - 작은 가로폭부터 > 큰 가로폭으로 제작하는 방법
+
+            2. 모바일 어디까지 지원?
+                - 스마트폰(가로/세로) 구분?
+                - 태블릿 별도 지원?
+                - PC > (HD, FHD, 4K, 8K)
+        */
+        /*  PC 우선 */
+        main {
+            width : 1000px;
+            border : 10px solid cornflowerblue;
+            margin : 0px auto;
+            padding : 20px;
+        }
+
+        header {
+            padding : 20px;
+            border : 10px solid orange;
+            margin-bottom : 20px;
+        }
+
+        section {
+            width : 650px;
+            border : 10px solid tomato;
+            padding : 20px;
+            float : left;
+            margin-bottom: 20px;
+        }
+
+        aside {
+            border : 10px solid skyblue;
+            width : 220px;
+            padding : 20px;
+            float : right;
+        }
+
+        footer {
+            border : 10px solid greenyellow;
+            padding : 20px;
+            clear : both; /*both를 주게 되면 자동으로 큰것에 대해 클리어함 */
+        }
+
+        /* 모바일 작업 */
+        @media screen and (max-width : 640px) {
+            
+            /* 작은 해상도 지원 */
+            main {
+                width : auto;
+            }
+
+            section {
+                width : auto;
+                float : none;
+            }
+
+            aside {
+                width : auto;
+                float : none;
+                margin-bottom : 20px;
+                display : none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <h1>Responsive Layout</h1>
+        </header>
+        <section>
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos, pariatur iste quasi nostrum fugit at explicabo officiis perferendis distinctio unde labore illum. Facere laborum distinctio optio ex nihil magni.</p>
+        </section>
+        <aside>
+            <h3>Sidebar</h3>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </aside>
+        <footer>
+            &copy;Copyright test.com 2023 All rights reserved.
+        </footer>
+    </main>
+    
+</body>
+</html>
