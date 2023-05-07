@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        
+            CSS3 레이아웃
+            - flex(선형 레이아웃), grid(평면 레이아웃) 
+            
+        */
+
+        .container {
+            display : grid;
+        }
+
+        .container .item:nth-child(1) {background-color:tomato;}
+        .container .item:nth-child(2) {background-color: orange ;}
+        .container .item:nth-child(3) {background-color:gold ;}
+        .container .item:nth-child(4) {background-color: greenyellow;}
+        .container .item:nth-child(5) {background-color: dodgerblue ;}
+        .container .item:nth-child(6) {background-color: violet ;}
+
+        .container {
+
+            /* 행과 열의 개수 + 크기  > 2행 3열*/ 
+            /* grid-template-rows: 100px 100px; */
+            /* grid-template-columns: 100px 100px 100px; */
+
+            /* fraction > 1/n */
+            /* grid-template-columns: 3fr 1fr; */
+
+            /* grid-template-columns: repeat(3, 1fr); */
+
+            width: 450px;
+            height: 300px;
+
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr ;
+        }
+        .container .item:nth-child(1) {
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* grid-column-end: span 3 ; */
+            grid-column : 1/4;
+        }
+
+        .container .item:nth-child(2) {
+            /* grid-row-start: 2;
+            grid-row-end: 4;
+            grid-row-end : span 2; */
+            grid-row : 2/4;
+        }
+
+        /* 
+        
+            Grid Container
+            - Grid 전체 영역
+
+            Grid Item
+            - 내부 요소
+            - <div class="item">
+
+            Grid Cell
+            - Grid의 한칸
+
+            Grid Line
+            - Grid Cell을 구분하는 각각의 선
+
+            Grid Number
+            - Grid Line 번호
+
+            Grid Gap
+            - Grid Cell 사이의 간격
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">가</div>
+        <div class="item">나</div>
+        <div class="item">다</div>
+        <div class="item">라</div>
+        <div class="item">마</div>
+        <div class="item">바</div>
+    </div>
+</body>
+</html>

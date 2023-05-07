@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin : 0;
+            padding : 0;
+        }
+
+        main {
+            /* border : 10px solid black; */
+            display : grid;
+
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 50px 200px 1fr;
+        }
+
+        .menu {
+            background-color: tomato;
+            grid-row: 1/4;
+            text-align: center;
+            color : white;
+        }
+
+        .menu h1 {
+            font-variant: small-caps;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding : 0;
+        }
+
+        .menu div {
+            font-size : 12px;
+        }
+
+        .menu hr {
+            border : 0;
+            border-top : 1px dashed white;
+        }
+
+        .search {
+            background-color: gold;
+            display : flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search input {
+            border : 1px solid yellow;
+            width : 400px;
+            padding : 4px;
+            outline: none;
+        }
+
+        .search button {
+            border : 1px solid yellow;
+            width : 100px;
+            height: 25px;
+            background-color: rgba(255,255,0,.5);
+            margin-left : 3px;
+        }
+
+        .banner {
+            background-color: yellowgreen;
+        }
+
+        .banner img {
+            object-fit: cover;
+            width : 100%;
+            height: 100%;
+        }
+
+        .list {
+            background-color: cornflowerblue;
+
+            display : grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-gap: ; */
+            gap : 20px;
+            padding : 20px;
+        }
+
+        .list div {
+            background-color: turquoise;
+        }
+
+        .list div img {
+            display : block;
+            margin : 20px auto;
+            border : 5px solid white;
+            padding : 3px;
+        }
+
+        .list div div {
+            margin : 30px; 
+            font-size : 14px;
+            color : #555;
+        }
+
+        /* 모바일 */
+        @media screen and (max-width:768px) {
+            /* 0px ~ 768px */
+            main {
+                grid-template-columns: 1fr;
+                grid-template-rows: 200px 50px 200px 1fr;
+            }
+
+            .menu {
+                grid-row : auto;
+            }
+
+            .menu ul {
+                display : flex;
+                justify-content: center;
+                margin : 0;
+            }
+
+            .menu li {
+                margin : 0 7px;
+            }
+
+            .menu hr {
+                display: none;
+            }
+
+            .menu div {
+                margin-top : 12px;
+            }
+
+            .list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="menu">
+            <h1>Study</h1>
+            <ul>
+                <li>JDK</li>
+                <li>JAVA</li>
+                <li>Oracle</li>
+                <li>SQL</li>
+                <li>JDBC</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>JQuery</li>
+            </ul>
+            <hr>
+            <div>
+                &copy;Copyright test.com 2023<br> All rights reserved.
+            </div>
+        </div>
+        <div class="search">
+            <input type="text">
+            <button>Search</button>
+        </div>
+        <div class="banner">
+            <img src="images/gimbal.jpg">
+        </div>
+        <div class="list">
+            <!-- (div>(img[src=images/rect_icon0$.png]+(div>lorem)))*6 -->
+            <div>
+                <img src="images/rect_icon01.png" alt="">
+                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quasi porro soluta adipisci, harum optio laudantium nulla saepe eveniet! Labore laboriosam quod quidem incidunt ad? Nisi vel voluptatem facere veniam.</div>
+            </div>
+            <div>
+                <img src="images/rect_icon02.png" alt="">
+                <div>Doloremque eos provident explicabo quia iure unde saepe, vitae praesentium incidunt dolores accusamus asperiores dolore, ut architecto amet repellat nisi exercitationem tempora voluptatum totam cum. Consectetur quam odio voluptates quis.</div>
+            </div>
+            <div>
+                <img src="images/rect_icon03.png" alt="">
+                <div>Eaque sit, odit nulla accusamus enim aut provident laudantium praesentium voluptate et modi totam quaerat saepe aliquid dolorem pariatur, nam quasi. Quam reiciendis deleniti, error impedit explicabo esse molestias. Beatae!</div>
+            </div>
+            <div>
+                <img src="images/rect_icon04.png" alt="">
+                <div>Repellat error doloribus illum blanditiis debitis qui, minus quod corporis recusandae praesentium dolore suscipit aspernatur necessitatibus officia voluptatibus provident ad dignissimos! Illo aspernatur incidunt quod ex eaque reprehenderit cupiditate velit.</div>
+            </div>
+            <div>
+                <img src="images/rect_icon05.png" alt="">
+                <div>Magnam alias explicabo expedita voluptatem aut placeat dolorem veniam earum accusamus reprehenderit veritatis, rem porro labore quasi, vero quos. Aliquam temporibus ducimus ratione sunt nostrum odit corporis asperiores vero possimus.</div>
+            </div>
+            <div>
+                <img src="images/rect_icon06.png" alt="">
+                <div>Officiis corporis aliquam consequuntur dolorem harum recusandae, nesciunt nulla praesentium id blanditiis culpa vitae, magnam eius excepturi neque totam suscipit voluptatem aliquid alias earum, quasi voluptas ducimus placeat officia. Fuga.</div>
+            </div>
+            <div>
+                <img src="images/rect_icon07.png" alt="">
+                <div>Officiis corporis aliquam consequuntur dolorem harum recusandae, nesciunt nulla praesentium id blanditiis culpa vitae, magnam eius excepturi neque totam suscipit voluptatem aliquid alias earum, quasi voluptas ducimus placeat officia. Fuga.</div>
+            </div>
+            <div>
+                <img src="images/rect_icon08.png" alt="">
+                <div>Officiis corporis aliquam consequuntur dolorem harum recusandae, nesciunt nulla praesentium id blanditiis culpa vitae, magnam eius excepturi neque totam suscipit voluptatem aliquid alias earum, quasi voluptas ducimus placeat officia. Fuga.</div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

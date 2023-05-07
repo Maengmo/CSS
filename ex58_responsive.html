@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Mobile 우선 */
+        main {
+            border : 10px solid cornflowerblue;
+            margin : 0px auto;
+            padding : 20px;
+        }
+
+        header {
+            padding : 20px;
+            border : 10px solid orange;
+            margin-bottom : 20px;
+        }
+
+        section {
+            border : 10px solid tomato;
+            padding : 20px;
+            margin-bottom: 20px;
+        }
+
+        aside {
+            border : 10px solid skyblue;
+            padding : 20px;
+            margin-bottom : 20px;
+        }
+
+        footer {
+            border : 10px solid greenyellow;
+            padding : 20px;
+        }
+
+        @media screen and (min-width : 640px) {
+            main {
+                width : 1000px;
+            }
+            section {
+                width : 650px;
+                float : left;
+            }
+            aside {
+                width : 220px;
+                float : right;
+            }
+            footer {
+                clear : both;
+            }
+        }
+
+        body {
+            background-color: gold;
+        }
+
+        /* /*  Media 쿼리를 사용할 때  */
+
+        @media screen and (orientation : landscape) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /* 미디어 종류, Media Type 
+            1. screen > 모니터, 태블릿, 스마트폰 화면 등
+            2. print > 프린터 장치, 인쇄용 CSS
+            3. speech > 스크린리더기
+            4. all > 모든 장치를 Cover
+        */
+        @media print {
+            body {
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Responsive Layout</h1>
+        </header>
+        <section>
+            <h2>Main Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos, pariatur iste quasi nostrum fugit at explicabo officiis perferendis distinctio unde labore illum. Facere laborum distinctio optio ex nihil magni.</p>
+        </section>
+        <aside>
+            <h3>Sidebar</h3>
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </aside>
+        <footer>
+            &copy;Copyright test.com 2023 All rights reserved.
+        </footer>
+    </main>
+    
+</body>
+</html>
